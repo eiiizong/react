@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>简单的例子-结构复用</title>
+	</head>
+	<body>
+		<div class="wrapper"></div>
+		<script type="text/javascript">
+			const wrapper = document.querySelector('.wrapper');
+
+			class LikeBtn {
+				render() {
+					return `
+						<button class="like-btn">
+							<span class="like-text">点赞</span>
+							<span>👍</span>
+						</button>
+					`;
+				}
+			};
+
+			const likeBtn1 = new LikeBtn();
+			wrapper.innerHTML = likeBtn1.render();
+		</script>
+	</body>
+</html>

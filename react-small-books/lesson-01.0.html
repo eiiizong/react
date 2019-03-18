@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>简单的例子</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<button class="like-btn">
+				<span class="like-text">点赞</span>
+				<span>👍</span>
+			</button>
+		</div>
+		<script type="text/javascript">
+			const btn = document.querySelector('.like-btn');
+			const btnText = btn.querySelector('.like-text');
+
+			let isLiked = false;
+
+			btn.addEventListener('click', () => {
+				isLiked = !isLiked;
+				if (isLiked) {
+					btnText.innerHTML = '取消';
+				} else {
+					btnText.innerHTML = '点赞';
+				}
+			}, false);
+		</script>
+	</body>
+</html>
