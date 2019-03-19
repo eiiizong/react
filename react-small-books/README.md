@@ -1,3 +1,5 @@
 # React.js 小书
 
-联系操作学习React.js
+练习 - 操作 - 学习 React.js
+
+依据 [react.js 小书](http://huziketang.mangojuice.top/books/react)
